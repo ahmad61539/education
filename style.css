@@ -1,0 +1,130 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Palet Warna */
+:root {
+  --primary: #181C14; /* Cokelat tua */
+  --secondary: #3C3D37; /* Abu-abu gelap */
+  --light: #ECDFCC; /* Krem muda */
+  --accent: #697565; /* Hijau keabu-abuan */ 
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: var(--secondary); 
+  background-color: var(--light); /* Latar belakang website */
+}
+
+header {
+  background-color: var(--primary); 
+  color: var(--light); 
+  padding: 20px;
+  border-bottom: 1px solid var(--secondary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--light); 
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent); 
+}
+
+.hero {
+  background-image: url("img/2.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: var(--primary);
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  z-index: 1;
+}
+
+.hero p {
+  font-size: 30px;
+  z-index: 1;
+}
+
+.materi {
+  padding: 40px;
+}
+
+.materi h2 {
+  color: var(--primary); 
+  margin-bottom: 20px;
+}
+
+.materi ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.materi li {
+  border: 1px solid var(--secondary); 
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--light); 
+}
+
+.materi h3 {
+  color: var(--accent); 
+}
+
+.materi a {
+  text-decoration: none;
+  color: var(--accent); 
+}
+
+.tentang {
+  padding: 40px;
+}
+
+footer {
+  background-color: var(--primary); 
+  color: var(--light); 
+  text-align: center;
+  padding: 20px;
+}
+
+.hero {
+    background-image: url("img/2.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10}
